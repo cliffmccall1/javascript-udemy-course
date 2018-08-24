@@ -77,31 +77,60 @@
  * Operator precedence
  */
 
- var now = 2018;
- var yearJohn = 1989;
- var fullAge = 18;
+//  var now = 2018;
+//  var yearJohn = 1989;
+//  var fullAge = 18;
 
- // Multiple operators
- var isFullAge = now - yearJohn >= fullAge; //true
- console.log(isFullAge);
+//  // Multiple operators
+//  var isFullAge = now - yearJohn >= fullAge; //true
+//  console.log(isFullAge);
 
-// Grouping
- var ageJohn = now - yearJohn;
- var ageMark = 35;
- var average = (ageJohn + ageMark) / 2;
- console.log(average);
+// // Grouping
+//  var ageJohn = now - yearJohn;
+//  var ageMark = 35;
+//  var average = (ageJohn + ageMark) / 2;
+//  console.log(average);
 
- // Multiple assignments
- var x, y;
-x =  y = (3 + 5) * 4 -6; // 8 * 4 - 6 // 32 - 6 // 26
-console.log(x, y);
+//  // Multiple assignments
+//  var x, y;
+// x =  y = (3 + 5) * 4 -6; // 8 * 4 - 6 // 32 - 6 // 26
+// console.log(x, y);
 
-// More operators
-x *= 2;
-console.log(x);
-x += 10;
-console.log(x);
-x++;
-console.log(x);
-x--;
-console.log(x);
+// // More operators
+// x *= 2;
+// console.log(x);
+// x += 10;
+// console.log(x);
+// x++;
+// console.log(x);
+// x--;
+// console.log(x);
+
+/*************************
+ *  Coding Challenge 1
+ */
+
+ /*
+ Mark and John are trying to compare their BMI, which is calculated using
+ the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
+
+ 1. Store Mark and John's mass and height.
+ 2. Calculate both BMIs
+ 3. Create a boolean variable containing information about
+ whether Mark has a higher BMI than John.
+ 4. Print a string to the console containing the variable from step 3.
+
+ */
+
+ var markHeight = 1.75;
+ var johnHeight = 1.66;
+ var markMass = 70;
+ var johnMass = 88;
+
+ var markBMI = markMass / (markHeight * markHeight);
+ var johnBMI = johnMass / (johnHeight * johnHeight);
+ console.log(markBMI, johnBMI);
+
+ var greaterBMI = markBMI > johnBMI;
+
+ console.log("Is Mark's BMI higher than John's?" + ' ' + greaterBMI);
